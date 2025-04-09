@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contrato - HelioSec</title>
+  <title>Contratar - HelioSec</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Formulário de Contrato</h1>
+    <h1>Contratação de Serviços</h1>
     <nav>
       <a href="index.html">Início</a>
-      <a href="perfil.html">Fundador</a>
+      <a href="sobre.html">Fundador</a>
       <a href="contrato.html" class="ativo">Contratar</a>
     </nav>
   </header>
 
   <main class="formulario">
     <h2>Solicite um contrato</h2>
-    <p>Preencha os dados abaixo para contratar os serviços da HelioSec. Entraremos em contato o mais rápido possível.</p>
+    <p>Preencha os dados abaixo e retornaremos com um orçamento.</p>
 
     <form action="#" method="post" class="form">
       <label for="nome">Seu nome:</label>
@@ -30,16 +30,16 @@
       <label for="servico">Serviço desejado:</label>
       <select id="servico" name="servico" required>
         <option value="">Selecione</option>
-        <option value="teste">Teste de invasão ética</option>
-        <option value="analise">Análise de vulnerabilidade</option>
-        <option value="reforco">Reforço de segurança</option>
+        <option value="pentest">Teste de Invasão Ética</option>
+        <option value="analise">Análise de Vulnerabilidade</option>
+        <option value="reforco">Reforço de Segurança</option>
       </select>
 
       <label for="valor">Valor estimado (R$):</label>
       <input type="number" id="valor" name="valor" placeholder="Ex: 500" required>
 
       <label for="descricao">Resumo do contrato:</label>
-      <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o que será contratado, prazos, escopo..." required></textarea>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o escopo, prazos, e observações..." required></textarea>
 
       <button type="submit" class="btn">Enviar Contrato</button>
     </form>

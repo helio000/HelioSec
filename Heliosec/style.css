@@ -1,49 +1,167 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #00ffcc;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #00ffcc;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+/* Hero */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #00e6b8;
+}
+
+/* Perfil */
+.perfil-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ffcc;
+  margin-bottom: 20px;
+}
+
+.perfil-container h2 {
+  font-size: 2em;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.perfil-container p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Formulário */
 .formulario {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .formulario h2 {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form label {
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  .form input,
-  .form select,
-  .form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1em;
-  }
-  
-  .form button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #00bcd4;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .form button:hover {
-    background-color: #0097a7;
-  }
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.formulario h2 {
+  text-align: center;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.form label {
+  margin-top: 15px;
+  font-weight: bold;
+  display: block;
+  color: #00ffcc;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  border: 1px solid #00ffcc;
+  border-radius: 6px;
+}
+
+.form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #00e6b8;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+}
